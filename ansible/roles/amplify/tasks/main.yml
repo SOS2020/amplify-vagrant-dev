@@ -1,0 +1,13 @@
+---
+- name: Install AWS CLI
+  npm:
+    name: aws-amplify/cli
+    global: yes
+  become: yes
+  become_user: vagrant
+
+#- name: Install AWS CLI
+#  shell: npm install -g @aws-amplify/cli
+#  become: yes
+#  become_user: vagrant
+

@@ -1,0 +1,8 @@
+---
+- name: Installs and configures a Centos 8 development environment for AWS
+  hosts: vagrant
+  become: yes
+
+  roles:
+  - role: ansible-role-nodejs
+  #- role: amplify
